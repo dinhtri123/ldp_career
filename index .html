@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="header-logo">
+          <img src="./images/logo.svg" alt="">
+        </a>
+        <div class="icon-menu">
+          <img src="./images/icon-menu.svg" alt="">
+        </div>
+        <div class="header-right-wrapper">
+          <div class="header-right">
+            <span class="icon-close-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7l10 10M7 17L17 7"/></svg>
+            </span>
+            <ul class="header-menu">
+              <li><a href="#" class="active">Trang chủ</a></li>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Cơ hội việc làm</a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li><a href="#">Tuyển dụng Tiến sĩ</a></li>
+            </ul>
+            <div class="header-language">
+              <a href="/">
+                <img src="./images/logo-vi.png" alt="">
+              </a>
+              <a href="/">
+                <img src="./images/logo-en.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <img src="./images/banner.png" class="md" alt="">
+      <img src="./images/banner-sm.png" class="sm" alt="">
+    </div>
+    <section class="section-search">
+      <div class="container">
+        <div class="search-top">
+          <h2>TÌM KIẾM <b>CÔNG VIỆC</b> PHÙ HỢP</h2>
+          <div class="search-form">
+            <div class="search-form-job">
+              <div class="search-form-label">
+                <img src="./images/search-normal.svg" alt="">
+                <p>Tìm kiếm công việc ...</p>
+              </div>
+              <input type="search" name="search-job" id="search-job" placeholder="Công việc bạn mong muốn...">
+            </div>
+            <div class="search-form-job">
+              <div class="search-form-label">
+                <img src="./images/map.svg" alt="">
+                <p>Đơn vị làm việc</p>
+              </div>
+              <select name="don-vi">
+                <option value="" disabled selected hidden>VD: Trường Cao Đẳng FPT</option>
+                <option value="truong-cao-dang-fpt-polytechnic">Trường Cao đẳng FPT Polytechnic</option>
+                <option value="truong-dai-hoc-fpt">Trường Đại học FPT</option>
+                <option value="he-thong-truong-pho-thong-fpt">Hệ thống Trường Phổ thông FPT (FPT Schools)</option>
+                <option value="greenwich-viet-nam">Greenwich Việt Nam</option>
+                <option value="vien-quan-tri-va-cong-nghe-fsb">Viện Quản trị & Công nghệ FSB</option>
+                <option value="trung-tam-lien-ket-quoc-te-fpt">Trung tâm Liên kết quốc tế FPT (FAI)</option>
+                <option value="swinburne-viet-nam">Swinburne Việt Nam</option>
+                <option value="truong-fpt-polyschool">Trường FPT PolySchool</option>
+                <option value="to-chuc-giao-duc-fpt">Tổ chức Giáo dục FPT</option>
+                <option value="trung-tam-cao-dang-quoc-te-fpt">Trung tâm Cao đẳng Quốc tế FPT (FPI)</option>
+                <option value="dai-hoc-a-chau">Đại học Á Châu</option>
+              </select>
+
+            </div>
+            <div class="search-form-job">
+              <div class="search-form-label">
+                <img src="./images/briefcase.svg" alt="">
+                <p>Ngành nghề</p>
+              </div>
+              <select name="nganh-nghe">
+                <option value="" disabled selected hidden>VD: Công nghệ thông tin</option>
+                <option value="cham-soc-suc-khoe-lam-dep">Chăm sóc sức khỏe/Làm đẹp</option>
+                <option value="cong-nghe-thong-tin">Công nghệ thông tin</option>
+                <option value="cong-tac-dich-vu-hoc-sinh-sinh-vien">Công tác, dịch vụ học sinh/sinh viên</option>
+                <option value="dam-bao-chat-luong">Đảm bảo chất lượng</option>
+                <option value="giam-thi">Giám thị</option>
+                <option value="giang-vien">Giảng viên</option>
+                <option value="giang-vien-nghien-cuu-vien">Giảng viên/Nghiên cứu viên</option>
+                <option value="giao-vien">Giáo viên</option>
+                <option value="hanh-chinh-dam-bao">Hành chính - Đảm bảo</option>
+                <option value="hop-tac-quoc-te">Hợp tác quốc tế</option>
+                <option value="ke-toan-tai-chinh-ngan-hang">Kế Toán - Tài chính – Ngân hàng</option>
+                <option value="khach-san-du-lich-lu-hanh">Khách sạn - Du lịch – Lữ hành</option>
+                <option value="kien-truc-thiet-ke-xay-dung">Kiến trúc/Thiết kế/Xây dựng</option>
+                <option value="ky-thuat-ha-tang">Kỹ thuật hạ tầng</option>
+                <option value="lai-xe">Lái xe</option>
+                <option value="lao-dong-pho-thong">Lao động phổ thông (Tạp vụ, Bảo vệ)</option>
+                <option value="tiep-thi">Tiếp thị</option>
+                <option value="nghien-cuu-va-phat-trien-chuong-trinh">Nghiên cứu và phát triển chương trình</option>
+                <option value="nhan-su">Nhân sự</option>
+                <option value="phat-trien-ca-nhan-ky-nang-mem">Phát triển cá nhân/Kỹ năng mềm</option>
+                <option value="quan-he-doanh-nghiep">Quan hệ doanh nghiệp</option>
+                <option value="quan-ly">Quản lý</option>
+                <option value="quan-ly-khoa-hoc">Quản lý khoa học</option>
+                <option value="quan-ly-ve-sinh-an-toan-thuc-pham">Quản lý vệ sinh an toàn thực phẩm</option>
+                <option value="quan-tri-kinh-doanh">Quản trị kinh doanh</option>
+                <option value="thiet-ke">Thiết kế</option>
+                <option value="thong-tin-thu-vien">Thông tin thư viện</option>
+                <option value="thu-ky">Thư ký</option>
+                <option value="thuc-tap-sinh">Thực tập sinh</option>
+                <option value="tieng-anh">Tiếng Anh</option>
+                <option value="tieng-han">Tiếng Hàn</option>
+                <option value="tieng-nhat">Tiếng Nhật</option>
+                <option value="tieng-trung">Tiếng Trung</option>
+                <option value="to-chuc-su-kien">Tổ chức sự kiện</option>
+                <option value="to-chuc-va-quan-ly-dao-tao-khao-thi">Tổ chức và quản lý đào tạo/Khảo thí</option>
+                <option value="tro-giang">Trợ giảng</option>
+                <option value="truyen-thong-quan-he-cong-chung">Truyền thông/Quan hệ công chúng</option>
+                <option value="tuyen-sinh">Tuyển sinh</option>
+                <option value="van-hoa-doan-the">Văn hóa - Đoàn thể</option>
+                <option value="van-thu-luu-tru">Văn thư - Lưu trữ</option>
+                <option value="xay-dung-co-ban">Xây dựng cơ bản</option>
+                <option value="y-te">Y tế</option>
+              </select>
+
+            </div>
+            <div class="search-form-job">
+              <div class="search-form-label">
+                <img src="./images/location.svg" alt="">
+                <p>Địa Điểm</p>
+              </div>
+              <select name="tinh-thanh" required>
+                <option value="" disabled selected hidden>VD: Hà Nội</option>
+                <option value="ba-ria-vung-tau">Bà Rịa - Vũng Tàu</option>
+                <option value="bac-giang">Bắc Giang</option>
+                <option value="bac-ninh">Bắc Ninh</option>
+                <option value="binh-dinh">Bình Định</option>
+                <option value="binh-duong">Bình Dương</option>
+                <option value="binh-phuoc">Bình Phước</option>
+                <option value="ca-mau">Cà Mau</option>
+                <option value="can-tho">Cần Thơ</option>
+                <option value="da-nang">Đà Nẵng</option>
+                <option value="dak-lak">Đắk Lắk</option>
+                <option value="dong-nai">Đồng Nai</option>
+                <option value="gia-lai">Gia Lai</option>
+                <option value="ha-nam">Hà Nam</option>
+                <option value="ha-noi">Hà Nội</option>
+                <option value="hai-phong">Hải Phòng</option>
+                <option value="hau-giang">Hậu Giang</option>
+                <option value="ho-chi-minh">Hồ Chí Minh</option>
+                <option value="hue">Huế</option>
+                <option value="khanh-hoa">Khánh Hòa</option>
+                <option value="kien-giang">Kiên Giang</option>
+                <option value="nam-dinh">Nam Định</option>
+                <option value="nghe-an">Nghệ An</option>
+                <option value="quang-nam">Quảng Nam</option>
+                <option value="quang-ninh">Quảng Ninh</option>
+                <option value="soc-trang">Sóc Trăng</option>
+                <option value="tay-ninh">Tây Ninh</option>
+                <option value="thai-nguyen">Thái Nguyên</option>
+                <option value="thanh-hoa">Thanh Hóa</option>
+                <option value="toan-quoc">Toàn Quốc</option>
+                <option value="vinh-phuc">Vĩnh Phúc</option>
+              </select>
+
+
+            </div>
+            <button type="submit" class="search-form-btn">TÌM KIẾM</button>
+          </div>
+        </div>
+      </div>
+      <div class="brand">
+        <div class="swiper mySwiper brand-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/brand1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand8.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand9.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand11.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand12.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="join">
+        <div class="container">
+          <div class="join-inner">
+            <h2>Gia nhập <b>FPT Education</b></h2>
+            <div class="join-list">
+              <div class="join-item">
+                <div class="join-item-content">
+                  <div class="join-item-icon">
+                    <img src="./images/join-icon1.svg" alt="">
+                  </div>
+                  <h3>Giáo Viên</h3>
+                  <p>Giảng dạy tại FPT School & FPT PolySchool, rèn luyện kỹ năng sống, tư duy sáng tạo cho học sinh,
+                    đồng thời xây dựng môi trường học tập hiện đại, tích cực theo triết lý "Tự lập để trưởng thành".</p>
+                </div>
+                <div class="join-item-img">
+                  <img src="./images/join-img1.png" alt="">
+                </div>
+              </div>
+              <div class="join-item">
+                <div class="join-item-content">
+                  <div class="join-item-icon">
+                    <img src="./images/join-icon2.svg" alt="">
+                  </div>
+                  <h3>Giảng Viên</h3>
+                  <p>Giảng dạy tại các khối Cao đẳng, Đại học, sau Đại học và Trung tâm liên kết của FPT Education,
+                    truyền đạt kiến thức, kỹ năng thực tiễn và định hướng tư duy sáng tạo, đáp ứng nhu cầu "thực học -
+                    thực làm" cho người học.</p>
+                </div>
+                <div class="join-item-img">
+                  <img src="./images/join-img2.png" alt="">
+                </div>
+              </div>
+              <div class="join-item">
+                <div class="join-item-content">
+                  <div class="join-item-icon">
+                    <img src="./images/join-icon3.svg" alt="">
+                  </div>
+                  <h3>Cán Bộ</h3>
+                  <p>Quản lý, hỗ trợ và vận hành các hoạt động giáo dục: Tuyển sinh, Tài chính, Nhân sự, Quan hệ doanh
+                    nghiệp, Truyền thông, Công nghệ,... nhằm đảm bảo chất lượng giảng dạy, phát triển sinh viên và xây
+                    dựng hệ thống giáo dục hiện đại, bền vững.</p>
+                </div>
+                <div class="join-item-img">
+                  <img src="./images/join-img3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recruitment">
+      <div class="container">
+        <div class="recruitment-inner">
+          <h2>vị trí tuyển dụng mới</h2>
+          <div class="swiper mySwiper recruitment-list-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recruitment-item">
+                  <div class="recruitment-item-top">
+                    <span>
+                      <img src="./images/brand6.png" alt="">
+                    </span>
+                    <div>
+                      <p>FPT Polytechnic</p>
+                      <p>
+                        <img src="./images/re-location.svg" alt="">
+                        Thanh Hóa
+                      </p>
+                    </div>
+                    <a href="/">
+                      <img src="./images/rearow.svg" alt="">
+                    </a>
+                  </div>
+                  <h3>Giảng viên thiết kế đồ hoạ</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div class="container">
+        <div class="why-inner">
+          <h2>tạo sao nên chọn <b>fpt education</b></h2>
+          <div class="why-scale">
+            <h3 class="md">Quy mô <b>FPT Education</b></h3>
+            <p class="md">Hệ thống đào tạo đa cấp bậc từ bậc Tiểu học đến sau Đại học.</p>
+            <img src="./images/why-scale-img.png" class="md" alt="">
+            <img src="./images/why-scale-img-sm.png" class="sm" alt="">
+            <div class="why-scale-change">
+              <img src="./images/why-scale-img2.png" alt="">
+              <div class="why-scale-change-right">
+                <h4>“Khát Vọng Đổi Thay”</h4>
+                <div class="why-scale-change-list">
+                  <div>
+                    <img src="./images/why-scale-icon1.svg" alt="">
+                    <h5>Triết Lý Giáo Dục</h5>
+                  </div>
+                  <div>
+                    <img src="./images/why-scale-icon2.svg" alt="">
+                    <h5>Triết Lý Giáo Dục</h5>
+                  </div>
+                  <div>
+                    <img src="./images/why-scale-icon3.svg" alt="">
+                    <h5>Triết Lý Giáo Dục</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="why-benefit">
+            <h3>Chế độ đãi ngộ tại <br class="sm"><b>FPT Education</b></h3>
+            <p>FPT Education mang đến chế độ đãi ngộ toàn diện cho bản thân và gia đình CBGV</p>
+            <div class="why-benefit-list">
+              <div class="why-benefit-item">
+                <div class="benefit-item-top">
+                  <h4>Chính sách <br> Đãi ngộ Phi Tài chính</h4>
+                  <a href="/">
+                    <img src="./images/rearow.svg" alt="">
+                  </a>
+                </div>
+                <p>FPT Education mang đến môi trường làm việc sáng tạo, cởi mở, cơ hội phát triển sự nghiệp rộng mở.
+                  CBGV được chăm sóc đời sống tinh thần qua các hoạt động văn hóa gắn kết; tham gia các chương trình đào
+                  tạo chuyên sâu.</p>
+                <a href="/">
+                  Xem Thêm
+                </a>
+              </div>
+              <div class="why-benefit-item">
+                <div class="benefit-item-top">
+                  <h4>Chính sách <br>Đãi ngộ Tài chính</h4>
+                  <a href="/">
+                    <img src="./images/rearow.svg" alt="">
+                  </a>
+                </div>
+                <p>FPT Education chi trả lương, thưởng cạnh tranh. Ngoài ra, hỗ trợ CBGV chi phí đào tạo, nghiên cứu.
+                  lãi suất vay mua nhà & xe, chăm sóc sức khỏe toàn diện, hưởng chính sách ưu đãi cho gia đình.</p>
+                <a href="/">
+                  Xem Thêm
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-cul">
+        <h3>Văn hóa <b>FPT Education</b></h3>
+        <p>Văn hóa FPT được xây dựng nên từ bộ gene khác biệt - năng động, sáng tạo.</p>
+        <div class="swiper cul-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/cul-img1.png" alt="">
+              <h3>Văn hóa cốt lõi FPT</h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cul-img2.png" alt="">
+              <div>
+                <h3>Hội Làng</h3>
+                <p>Tôn – Đổi – Đồng – Chí – Gương - Sáng<br>
+
+                  TÔN TRỌNG - là Tôn trọng cá nhân, bao gồm: Nói thẳng, Lắng Nghe và Bao dung.<br>
+
+                  ĐỔI MỚI - là Tinh thần đổi mới, bao gồm: Học hành, Sáng tạo và STCo<br>
+
+                  ĐỒNG ĐỘI - là Tinh thần đồng đôi, bao gồm: Đồng tâm, Tâp thể và Chân tình<br>
+
+                  CHÍ GƯƠNG SÁNG” nghĩa là “CHÍ CÔNG - GƯƠNG MẪU - SÁNG SUỐT” - là những giá trị cần có của lãnh đao FPT
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cul-img3.png" alt="">
+              <h3>Họp ngành dọc & leo núi</h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cul-img4.png" alt="">
+              <h3>Hội Thao</h3>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="pro">
+      <div class="container">
+        <div class="pro-inner">
+          <h2>quy trình <br class="sm">tuyển dụng</h2>
+          <div class="pro-process">
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon1.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>ứng tuyển</h3>
+                <p>Ứng viên nộp hồ sơ thông qua các kênh tuyển của FPT Education</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon2.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>Tiếp nhận & sàng lọc</h3>
+                <p>Sau khi tiếp nhận hồ sơ ứng viên, bộ phận sẽ tiến hành sàng lọc và liên hệ lại 7-10 ngày</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon3.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>Làm bài thi FEQ</h3>
+                <p>Ứng viên cần hoàn thành bài trắc nghiệm tìm hiểu về tổ chức (FEQ) để đủ điều kiện.</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon4.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>Thi tuyển</h3>
+                <p>Đối với một số vị trí đặc thù, ứng viên sẽ phải thực hiện thêm bài kiểm tra chuyên môn</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon5.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>tiếp xúc ứng viên</h3>
+                <p>Các trưởng phòng ban sẽ tiếp xúc và trao đổi trực tiếp với ứng viên về công việc chi tiết,...</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon6.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>Giảng thử</h3>
+                <p>Áp dụng đối với vị trí Giáo viên/ Giảng viên</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon7.svg" alt="">
+                <img src="./images/pro-icon-arrow.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>Thoả thuận hợp đồng</h3>
+                <p>Bộ phận Tuyển dụng sẽ xác nhận lại với ứng viên về nội dung công việc, chế độ đãi ngộ và gửi thư</p>
+              </div>
+            </div>
+            <div class="process-item">
+              <div class="process-item-top">
+                <img src="./images/pro-icon8.svg" alt="">
+                <img src="./images/icon-complete.svg" alt="">
+              </div>
+              <div class="process-item-bottom">
+                <h3>hoàn thiện hồ sơ</h3>
+                <p>Ứng viên trung tuyển sẽ hoàn thiện hồ sơ theo yêu cầu và nhận việc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="news-inner">
+          <h2><b>tin tức</b> nổi bật</h2>
+          <div class="news-list">
+            <div class="news-item">
+              <img src="./images/news-img1.png" alt="">
+              <p>“Ngàn lẻ một niềm vui ở FPT edu”</p>
+            </div>
+            <div class="news-item">
+              <img src="./images/news-img2.png" alt="">
+              <p>“FETV Văn hóa 06 - Văn hóa “Người lạ ơi” ở FPT Edu”</p>
+            </div>
+            <div class="news-item">
+              <img src="./images/news-img3.png" alt="">
+              <p>“FETV Phỏng vấn dạo 02 - Điều gì khiến anh chị em FPT Edu thích nhất khi đi làm?”</p>
+            </div>
+          </div>
+          <div class="news-banner">
+            <img src="./images/news-banner.png" class="md" alt="">
+            <img src="./images/news-banner-sm.png" class="sm" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-1">
+          <h3>Thông tin liên hệ:</h3>
+          <ul>
+            <li>
+              FE Hà Nội: <a href="mailto:hr.fehn@fe.edu.vn">hr.fehn@fe.edu.vn</a> - <a
+                href="tel:024.6291.5055">024.6291.5055</a>
+            </li>
+            <li>
+              FE Đà Nẵng: <a href="mailto:hr.fedn@fe.edu.vn">hr.fedn@fe.edu.vn</a> - <a
+                href="tel:0905.545.188">0905.545.188</a>
+            </li>
+            <li>
+              FE Hồ Chí Minh: <a href="mailto:hr.fehcm@fe.edu.vn">hr.fehcm@fe.edu.vn</a> - <a
+                href="tel:0976.877.010">0976.877.010</a>
+            </li>
+            <li>
+              FE Cần Thơ: <a href="mailto:hr.fect@fe.edu.vn">hr.fect@fe.edu.vn</a> - <a
+                href="tel:029.2360.1997">029.2360.1997</a>
+            </li>
+            <li>
+              FE Bình Định: <a href="mailto:hr.feqn@fe.edu.vn">hr.feqn@fe.edu.vn</a> - <a
+                href="tel:0256.7307.779">0256.7307.779</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-2">
+          <h3>Về chúng tôi</h3>
+          <ul>
+            <li><a href="https://fpt.edu.vn/about">Giới thiệu</a></li>
+            <li><a href="https://fpt.edu.vn/tin-tuc/20857/fpt-education-moi-truong-lam-viec">Môi trường làm việc</a>
+            </li>
+            <li><a href="https://career.fpt.edu.vn/RecruitmentProcess">Quy trình tuyển dụng</a></li>
+            <li><a href="https://career.fpt.edu.vn/Job/Search">Vị trí tuyển dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer-3">
+          <h3>Liên kết</h3>
+          <div>
+            <ul class="footer-3-social">
+              <li><a href="/">
+                  <img src="./images/icon-fb.svg" alt="">
+                </a></li>
+              <li><a href="/">
+                  <img src="./images/icon-in.svg" alt="">
+                </a></li>
+              <li><a href="/">
+                  <img src="./images/icon-ytb.svg" alt="">
+                </a></li>
+            </ul>
+            <p>Copyright © 2020 Developed by <a href="/">PID Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperBrand = new Swiper(".brand-swiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        375: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+    var swiperRe = new Swiper(".recruitment-list-slider", {
+      slidesPerView: 3,
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+      spaceBetween: 24,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: { 
+          slidesPerView: 1,
+          grid: {
+            rows: 3,
+          },
+        },
+        768: {
+          slidesPerView: 2,
+          grid: {
+            rows: 3,
+          },
+        },
+        1024: {
+          slidesPerView: 3,
+          grid: {
+            rows: 3,
+          },
+        },
+      },
+    });
+    var swiperCul = new Swiper(".cul-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      centeredSlides: true,
+      loop: true,
+      initialSlide: 1,
+    });
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
