@@ -26,7 +26,10 @@
         <div class="header-right-wrapper">
           <div class="header-right">
             <span class="icon-close-menu">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7l10 10M7 17L17 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m7 7l10 10M7 17L17 7" />
+              </svg>
             </span>
             <ul class="header-menu">
               <li><a href="#" class="active">Trang chủ</a></li>
@@ -50,6 +53,7 @@
   </header>
   <main>
     <div class="banner">
+      <a href="/" class="banner-btn">ỨNG TUYỂN NGAY</a>
       <img src="./images/banner.png" class="md" alt="">
       <img src="./images/banner-sm.png" class="sm" alt="">
     </div>
@@ -72,17 +76,18 @@
               </div>
               <select name="don-vi">
                 <option value="" disabled selected hidden>VD: Trường Cao Đẳng FPT</option>
-                <option value="truong-cao-dang-fpt-polytechnic">Trường Cao đẳng FPT Polytechnic</option>
-                <option value="truong-dai-hoc-fpt">Trường Đại học FPT</option>
-                <option value="he-thong-truong-pho-thong-fpt">Hệ thống Trường Phổ thông FPT (FPT Schools)</option>
-                <option value="greenwich-viet-nam">Greenwich Việt Nam</option>
-                <option value="vien-quan-tri-va-cong-nghe-fsb">Viện Quản trị & Công nghệ FSB</option>
-                <option value="trung-tam-lien-ket-quoc-te-fpt">Trung tâm Liên kết quốc tế FPT (FAI)</option>
-                <option value="swinburne-viet-nam">Swinburne Việt Nam</option>
-                <option value="truong-fpt-polyschool">Trường FPT PolySchool</option>
                 <option value="to-chuc-giao-duc-fpt">Tổ chức Giáo dục FPT</option>
+                <option value="vien-quan-tri-va-cong-nghe-fsb">Viện Quản trị & Công nghệ FSB</option>
+                <option value="truong-dai-hoc-fpt">Trường Đại học FPT</option>
+                <option value="swinburne-viet-nam">Swinburne Việt Nam</option>
+                <option value="greenwich-viet-nam">Greenwich Việt Nam</option>
+                <option value="dai-hoc-a-chau">Asia University Việt Nam</option>
+                <option value="truong-cao-dang-fpt-polytechnic">Trường Cao đẳng FPT Polytechnic</option>
+                <option value="trung-tam-lien-ket-quoc-te-fpt">Trung tâm Liên kết quốc tế FPT (FAI)</option>
+                <option value="truong-fpt-polyschool">Trường FPT PolySchool</option>
                 <option value="trung-tam-cao-dang-quoc-te-fpt">Trung tâm Cao đẳng Quốc tế FPT (FPI)</option>
-                <option value="dai-hoc-a-chau">Đại học Á Châu</option>
+                <option value="he-thong-truong-pho-thong-fpt">Hệ thống Trường Phổ thông FPT (FPT Schools)</option>
+
               </select>
 
             </div>
@@ -530,8 +535,9 @@
         <div class="why-inner">
           <h2>tạo sao nên chọn <b>fpt education</b></h2>
           <div class="why-scale">
-            <h3 class="md">Quy mô <b>FPT Education</b></h3>
+            <h3 class="md">Quy mô <b style="margin-left: 5px;"> FPT Education</b></h3>
             <p class="md">Hệ thống đào tạo đa cấp bậc từ bậc Tiểu học đến sau Đại học.</p>
+            
             <img src="./images/why-scale-img.png" class="md" alt="">
             <img src="./images/why-scale-img-sm.png" class="sm" alt="">
             <div class="why-scale-change">
@@ -736,6 +742,7 @@
             </div>
           </div>
           <div class="news-banner">
+            <a href="/" class="banner-btn">ỨNG TUYỂN NGAY</a>
             <img src="./images/news-banner.png" class="md" alt="">
             <img src="./images/news-banner-sm.png" class="sm" alt="">
           </div>
@@ -801,28 +808,29 @@
       </div>
     </div>
   </footer>
+  <a href="/" class="social-mess" target="_blank">
+    <img src="./images/icon-mess.png" alt="">
+  </a>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
     var swiperBrand = new Swiper(".brand-swiper", {
-      slidesPerView: 3,
       centeredSlides: true,
       loop: true,
       autoplay: {
         delay: 3000,
       },
       breakpoints: {
-        375: {
+        0: {
           slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 3,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 5,
         },
+
       },
     });
     var swiperRe = new Swiper(".recruitment-list-slider", {
@@ -837,7 +845,7 @@
         clickable: true,
       },
       breakpoints: {
-        0: { 
+        0: {
           slidesPerView: 1,
           grid: {
             rows: 3,
