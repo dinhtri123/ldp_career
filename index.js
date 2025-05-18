@@ -45,5 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   counters.forEach(counter => {
     observer.observe(counter);
+    
   });
 });
