@@ -47,4 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(counter);
     
   });
+
+  const benefitBtn = document.querySelectorAll('.benefit-btn');
+  benefitBtn.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dataPopup = this.dataset.popup;
+      const popup = document.querySelector(`.${dataPopup}`);
+      popup.classList.add('active');
+    });
+      
+  });
+  const popupClose = document.querySelectorAll('.popup-benefit-close');
+  popupClose.forEach(close => {
+    close.addEventListener('click', function() {
+      const popup = this.closest('.popup-benefit');
+      popup.classList.remove('active');
+    });
+  });
+  
 });
