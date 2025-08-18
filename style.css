@@ -1400,7 +1400,7 @@ footer {
  color: #fff
 }
 .popup-benefit-content{
-  padding: 20px;
+  padding: 24px 50px;
   max-height: 500px;
   overflow-y: auto;
 }
@@ -1411,12 +1411,43 @@ footer {
 .popup-benefit-content::-webkit-scrollbar-thumb {
   background-color: #ddd;
 }
-.popup-benefit-content p {
-  margin-bottom: 20px;
+.popup-benefit-content > div {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  gap: 12px;
+  font-size: 16px;
+  border-bottom: 1px dashed #D0CFCF;
+  padding: 10px 0px;
+  color: #151312;
 }
-.popup-benefit-content p b {
-  margin-bottom: 5px;
-  display: inline-block;
+.popup-benefit-content > div:last-child {
+  border-bottom: 0px;
+}
+.popup-benefit-content > div * {
+  line-height: 1.4;
+}
+.popup-benefit-content > div b {
+  font-size: 18px;
+}
+.popup-benefit-content > div > ul {
+  padding-left: 20px;
+}
+.popup-benefit-content > div > ul li {
+  list-style: disc;
+}
+.popup-benefit-content > div:last-child > span {
+  background: linear-gradient(90deg, #0339E7 0%, #02C7FF 100%);
+  max-width: 190px;
+  min-height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  gap: 8px;
 }
 .popup-benefit-img {
   max-height: 240px;
@@ -1427,7 +1458,18 @@ footer {
 .popup-benefit.active {
   display: flex;
 }
-
+.benefit-2-bottom {
+  display: block !important;
+}
+.benefit-2-bottom > b {
+  display: block;
+}
+.benefit-2-bottom ul li b {
+  font-size: 16px;
+}
+.benefit-2-bottom ul li {
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 767px) {
   .cul-item-content {
     padding: 50px 20px 20px;
@@ -1439,6 +1481,39 @@ footer {
   .cul-swiper .swiper-slide:hover .cul-item-content h3 {
     left: 20px;
   }
-  
+  .popup-benefit-content {
+    padding: 20px;
+  }
+  .popup-benefit-content > div {
+    grid-template-columns: 1fr;
+  }
+  .popup-benefit-content > div b {
+    font-size: 16px;
+  }
+  .popup-benefit-content > div > ul li {
+    font-size: 14px;
+  }
+  .popup-benefit-content > div:last-child > span {
+    font-size: 16px;
+  }
+  .popup-benefit-content > div * {
+    font-size: 14px;
+  }
+  .popup-benefit-content > div:last-child > span {
+    max-width: 120px;
+    font-size: 14px;
+    min-height: 50px;
+    margin: 0px auto;
+  }
+  .popup-benefit-content > div:last-child > span img {
+    width: 30px;
+  }
+  .benefit-2-bottom ul li b {
+    font-size: 14px;
+  }
+  .popup-benefit-content > div:last-child b {
+    font-size: 14px;
+  }
+
 }
 
