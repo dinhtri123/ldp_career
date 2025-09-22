@@ -1517,3 +1517,70 @@ footer {
 
 }
 
+.banner-link-warning {
+  position: absolute;
+  bottom: 35px;
+  right: 12%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 30px;
+  
+}
+.banner-link-warning-icon {
+  width: 80px;
+  display: flex;
+}
+.banner-link-warning-icon  img {
+  width: 100%;
+}
+.banner-link-warning  a {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #f96115;
+  font-style: italic;
+  opacity: 0.9;
+  font-weight: 300;
+}
+@media screen and (max-width: 1500px) {
+  .banner-link-warning {
+    font-size: 22px;
+    bottom: 20px;
+  }
+  .banner-link-warning-icon {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .banner-link-warning {
+    font-size: 18px;
+    bottom: 20px;
+  }
+  .banner-link-warning-icon {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner-link-warning {
+    font-size: 16px;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-link-warning {
+    font-size: 11px;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    width:max-content
+  }
+  .banner-link-warning-icon {
+    width: 30px;
+  }
+  .banner-link-warning  a {
+    text-underline-offset: 5px;
+  }
+}
